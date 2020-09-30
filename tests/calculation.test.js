@@ -10,7 +10,7 @@ describe("calculation", () => {
 
       let total = sumAll(nums);
 
-      expect(total).to.equal(10);
+      expect(total).to.equal(5);
     });
   });
 });
