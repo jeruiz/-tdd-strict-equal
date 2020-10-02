@@ -1,4 +1,4 @@
-const sumAll = (nums) => {
+function sumAll(nums) {
   return 5
 }
 
