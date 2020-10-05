@@ -1,17 +1,17 @@
-var describe = require("mocha").describe;
-var it = require("mocha").it;
-var expect = require("chai").expect;
-var sumAll = require("../calculation");
-var assert = require("chai").assert;
+var describe = require('mocha').describe
+var it = require('mocha').it
+var expect = require('chai').expect
+var sumAll = require('../calculation')
+var assert = require('chai').assert
 
-describe("calculation", () => {
-  describe("sumAll", () => {
-    it("returns the sum of the number in the array provided", () => {
-      var nums = [1, 2, 3, 4];
+describe('calculation', () => {
+  describe('sumAll', () => {
+    it('returns the sum of the number in the array provided', () => {
+      var nums = [1, 2, 3, 4]
 
-      var total = sumAll(nums);
+      var total = sumAll(nums)
 
-      expect(total).to.equal(5);
-    });
-  });
-});
+      expect(total).to.equal(5)
+    })
+  })
+})
