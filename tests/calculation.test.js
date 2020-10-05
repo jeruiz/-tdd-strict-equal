@@ -1,5 +1,3 @@
-var describe = require('mocha').describe
-var it = require('mocha').it
 var expect = require('chai').expect
 var sumAll = require('../calculation')
 var assert = require('chai').assert
