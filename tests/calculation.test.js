@@ -1,15 +1,34 @@
+// var mocha = require('mocha')
+// var it = require('mocha').it
 var expect = require('chai').expect
-var sumAll = require('../calculation')
-var assert = require('chai').assert
+var strictEqual = require('../calculation')
 
 describe('calculation', () => {
-  describe('sumAll', () => {
-    it('returns the sum of the number in the array provided', () => {
-      var nums = [1, 2, 3, 4]
+  describe('strictEqual', () => {
+    it('returns false for a strict equality', () => {
+      var isEqual = strictEqual(5, '5')
 
-      var total = sumAll(nums)
+      expect(isEqual).to.equal(false)
+    }),
+    it('returns true for a strict equality', () => {
+      var isEqual = strictEqual('a', 'a')
 
-      expect(total).to.equal(5)
+      expect(isEqual).to.equal(true)
+    }),
+    it('returns true for a strict equality', () => {
+      var isEqual = strictEqual(5, 5)
+
+      expect(isEqual).to.equal(true)
+    }),
+    it('returns false for a strict equality', () => {
+      var isEqual = strictEqual('a', 'b')
+
+      expect(isEqual).to.equal(false)
+    }),
+    it('returns false for a strict equality', () => {
+      var isEqual = strictEqual(3, 8)
+
+      expect(isEqual).to.equal(false)
     })
   })
 })
